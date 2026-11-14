@@ -2,7 +2,7 @@
 
 - **Name:** Sanjay M
 - **Date submitted:** 14 November 2026
-- **Repository link:** https://github.com/sanjay-complyance/pse-support-lab
+- **Repository link:** https://github.com/sanjaykawaki12/pse-support-lab
 - **Total time spent (real time):** 6 hours
 
 > All customer replies and acknowledgements below are drafts only. No real customer emails were sent. The exercise clock is Monday, 16 November 2026, Asia/Dubai. Real working time is recorded separately.
