@@ -1,0 +1,45 @@
+Ghaf Tree Cafe LLC — Investigation Evidence
+
+Import ID: d4ddb3b6-9031-4635-9ad7-b0f33033e741
+File: ghaf-cafe-nov-2026.xlsx
+Import result: Completed
+Rows: 8
+Invoices: 4
+Rejected: 4
+
+Database query:
+SELECT invoice_number, status, errors
+FROM invoices
+WHERE import_id='d4ddb3b6-9031-4635-9ad7-b0f33033e741'
+ORDER BY invoice_number;
+
+Results:
+GTC-118-GBO1 — Rejected
+GTC-119-GBO1 — Rejected
+GTC-120-GBO1 — Rejected
+GTC-121-GBO1 — Rejected
+
+Validation rule: AE-BR-04
+Affected fields:
+- Invoice issue date
+- Payment due date
+
+Observed formats:
+13/11/2026, 14/11/2026, 15/11/2026
+13/12/2026, 14/12/2026, 15/12/2026
+
+Portal requirement:
+YYYY-MM-DD
+
+Example correction:
+13/11/2026 -> 2026-11-13
+13/12/2026 -> 2026-12-13
+
+Finding:
+All four invoices were rejected by portal validation because date values were supplied in DD/MM/YYYY instead of the required YYYY-MM-DD format. Evidence supports a formatting issue, not an incorrect calendar date.
+
+Workaround:
+Correct both date columns to YYYY-MM-DD, verify invoice numbers are not already accepted, and upload the corrected file.
+
+Prevention:
+Provide localized date examples in the template, validate date formats before upload, and improve the error message with a clear example.

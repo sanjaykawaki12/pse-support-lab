@@ -1,0 +1,41 @@
+Marina Bay Hospitality LLC — P1 Incident Evidence
+
+Production alert (exercise inbox):
+Alert name: InvoicelyApiRestarted
+Service: api
+Severity: critical
+Environment: production
+Reported time: Monday 16 November 2026, 09:42 Asia/Dubai
+Reported condition: API process restarted 3 times in 15 minutes.
+
+Customer Success escalation:
+Reported at: 09:48 Asia/Dubai
+Forwarded by: Priya Nair at 09:50 Asia/Dubai
+
+Reported impact:
+- Multiple customers experience intermittent HTTP 502 Bad Gateway errors, mainly during uploads.
+- Some invoices reportedly remain in Validated status since approximately 09:30.
+- Marina Bay Hospitality LLC has a planned go-live on 18 November 2026.
+
+Priority:
+P1 — Critical production instability with multiple customers affected, upload failures, and invoices potentially not progressing to ASP submission.
+
+Investigation limitation:
+The local training environment is not the production environment. Local Docker container status, logs, and Grafana metrics cannot establish the cause of the production alert. No production restart logs, 502 traces, or Marina Bay invoice records are available in the local database.
+
+Required L3 investigation:
+1. Obtain production container/pod restart events, exit codes, and timestamps.
+2. Check deployment/configuration changes, memory pressure, OOM kills, health checks, and host/node events.
+3. Inspect ingress/reverse-proxy logs for 502 responses.
+4. Identify affected seller IDs and invoice IDs; verify each invoice state.
+5. Check submission worker health, queue depth, queue age, database connectivity, and ASP connectivity.
+6. Reconcile invoice status with ASP before recommending retries.
+
+Customer safety:
+Do not advise blind retries. Verify whether each affected invoice reached the ASP to avoid duplicate submissions.
+
+Escalation:
+Page L3 immediately under the P1 policy. L1 support retains customer communication ownership and provides updates every 30–60 minutes.
+
+Current root cause:
+Unknown — production evidence is required.

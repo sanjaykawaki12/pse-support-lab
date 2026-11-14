@@ -1,0 +1,80 @@
+SAHARA MEDICAL - INVESTIGATION EVIDENCE
+Import ID: 9d10b954-c31c-4f7b-a980-259372d7f45e
+
+1. INVOICE STATUS SUMMARY
+  status   | count 
+-----------+-------
+ Accepted  |     8
+ Submitted |    32
+(2 rows)
+
+
+2. INVOICES WITHOUT ASP MESSAGE ID
+ invoice_number | status | asp_message_id | asp_response | errors 
+----------------+--------+----------------+--------------+--------
+(0 rows)
+
+
+3. API LOGS WITH RATE LIMIT RESPONSES
+api-1  | {"time":"2026-11-13T16:49:34.564290134Z","level":"INFO","msg":"http request","method":"GET","path":"/v1/imports","route":"/v1/imports","status":200,"duration_ms":6}
+api-1  | {"time":"2026-11-13T16:50:54.997833429Z","level":"INFO","msg":"http request","method":"GET","path":"/v1/imports","route":"/v1/imports","status":200,"duration_ms":3}
+api-1  | {"time":"2026-11-13T16:53:44.022494296Z","level":"INFO","msg":"http request","method":"GET","path":"/v1/imports","route":"/v1/imports","status":200,"duration_ms":3}
+api-1  | {"time":"2026-11-13T16:55:12.510429626Z","level":"INFO","msg":"http request","method":"GET","path":"/v1/sellers","route":"/v1/sellers","status":200,"duration_ms":0}
+api-1  | {"time":"2026-11-13T17:20:19.954296034Z","level":"INFO","msg":"http request","method":"GET","path":"/v1/sellers","route":"/v1/sellers","status":200,"duration_ms":0}
+api-1  | {"time":"2026-11-13T17:25:18.429048452Z","level":"INFO","msg":"http request","method":"GET","path":"/v1/imports","route":"/v1/imports","status":200,"duration_ms":1}
+api-1  | {"time":"2026-11-13T17:38:38.038781379Z","level":"INFO","msg":"asp response","invoice_id":"cdf591b4-3d48-44b4-bb12-a47eb1e154f7","invoice_number":"SMS-1116-009-GBO1","status_code":429,"duration_ms":0}
+api-1  | {"time":"2026-11-13T17:38:38.038885712Z","level":"INFO","msg":"asp response","invoice_id":"b885b358-b90b-423a-bce9-707382c35032","invoice_number":"SMS-1116-010-GBO1","status_code":429,"duration_ms":0}
+api-1  | {"time":"2026-11-13T17:38:38.040708919Z","level":"INFO","msg":"asp response","invoice_id":"b18875cb-ba70-479f-9a27-a35b79f16a33","invoice_number":"SMS-1116-011-GBO1","status_code":429,"duration_ms":1}
+api-1  | {"time":"2026-11-13T17:38:38.042433128Z","level":"INFO","msg":"asp response","invoice_id":"42f1a092-bab7-487a-b28d-5a9a02ffd5aa","invoice_number":"SMS-1116-012-GBO1","status_code":429,"duration_ms":0}
+api-1  | {"time":"2026-11-13T17:38:38.045212761Z","level":"INFO","msg":"asp response","invoice_id":"823ff076-6331-40a6-8d5d-273ab298ed45","invoice_number":"SMS-1116-013-GBO1","status_code":429,"duration_ms":0}
+api-1  | {"time":"2026-11-13T17:38:38.047070877Z","level":"INFO","msg":"asp response","invoice_id":"fe85f624-ea0f-49ab-93d9-b52f3b5bee8e","invoice_number":"SMS-1116-015-GBO1","status_code":429,"duration_ms":1}
+api-1  | {"time":"2026-11-13T17:38:38.047300108Z","level":"INFO","msg":"asp response","invoice_id":"fd783da7-39d2-49ab-88ee-95a140ed8178","invoice_number":"SMS-1116-014-GBO1","status_code":429,"duration_ms":1}
+api-1  | {"time":"2026-11-13T17:38:38.048258214Z","level":"INFO","msg":"asp response","invoice_id":"3cb38bf1-cc6d-4a38-ad64-70475c885be7","invoice_number":"SMS-1116-016-GBO1","status_code":429,"duration_ms":0}
+api-1  | {"time":"2026-11-13T17:38:38.05036894Z","level":"INFO","msg":"asp response","invoice_id":"fb7b1c0e-2ecc-4e54-bd2f-b006493980de","invoice_number":"SMS-1116-017-GBO1","status_code":429,"duration_ms":0}
+api-1  | {"time":"2026-11-13T17:38:38.051566203Z","level":"INFO","msg":"asp response","invoice_id":"0abbce44-e145-4253-83d6-2234f6ac173a","invoice_number":"SMS-1116-018-GBO1","status_code":429,"duration_ms":0}
+api-1  | {"time":"2026-11-13T17:38:38.051614619Z","level":"INFO","msg":"asp response","invoice_id":"e89886cf-0407-4825-ab9c-2d25ff45fe95","invoice_number":"SMS-1116-019-GBO1","status_code":429,"duration_ms":0}
+api-1  | {"time":"2026-11-13T17:38:38.053397863Z","level":"INFO","msg":"asp response","invoice_id":"89d039c5-3d60-484c-83e3-c25d323271a5","invoice_number":"SMS-1116-020-GBO1","status_code":429,"duration_ms":0}
+api-1  | {"time":"2026-11-13T17:38:38.055131339Z","level":"INFO","msg":"asp response","invoice_id":"8d6e7629-9dd1-43fe-9e2c-da2dbebd3e8d","invoice_number":"SMS-1116-021-GBO1","status_code":429,"duration_ms":0}
+api-1  | {"time":"2026-11-13T17:38:38.056286644Z","level":"INFO","msg":"asp response","invoice_id":"402274e7-3891-49fb-99a5-9957cdb04b59","invoice_number":"SMS-1116-022-GBO1","status_code":429,"duration_ms":0}
+api-1  | {"time":"2026-11-13T17:38:38.056422445Z","level":"INFO","msg":"asp response","invoice_id":"1fa23d21-e87b-4a25-8b0c-afd420f5d654","invoice_number":"SMS-1116-023-GBO1","status_code":429,"duration_ms":0}
+api-1  | {"time":"2026-11-13T17:38:38.057653315Z","level":"INFO","msg":"asp response","invoice_id":"3d36bde8-8654-43e5-a2ad-5f2bcee22c2e","invoice_number":"SMS-1116-024-GBO1","status_code":429,"duration_ms":0}
+api-1  | {"time":"2026-11-13T17:38:38.058803511Z","level":"INFO","msg":"asp response","invoice_id":"e7c36a89-2737-4a3a-8f1f-a9e41214c78b","invoice_number":"SMS-1116-025-GBO1","status_code":429,"duration_ms":0}
+api-1  | {"time":"2026-11-13T17:38:38.060739965Z","level":"INFO","msg":"asp response","invoice_id":"3ee7db8b-1b84-4afd-a11d-12b986267797","invoice_number":"SMS-1116-026-GBO1","status_code":429,"duration_ms":0}
+api-1  | {"time":"2026-11-13T17:38:38.062236795Z","level":"INFO","msg":"asp response","invoice_id":"0bc3cea3-5ced-4757-b434-9aae676a24e5","invoice_number":"SMS-1116-027-GBO1","status_code":429,"duration_ms":0}
+api-1  | {"time":"2026-11-13T17:38:38.062828032Z","level":"INFO","msg":"asp response","invoice_id":"e3e448fb-f4c6-4306-b533-45e7b80a77a5","invoice_number":"SMS-1116-028-GBO1","status_code":429,"duration_ms":1}
+api-1  | {"time":"2026-11-13T17:38:38.063529367Z","level":"INFO","msg":"asp response","invoice_id":"8fb5416c-f2ab-41da-a025-0589a6a2fbcb","invoice_number":"SMS-1116-029-GBO1","status_code":429,"duration_ms":0}
+api-1  | {"time":"2026-11-13T17:38:38.064703824Z","level":"INFO","msg":"asp response","invoice_id":"6b7ba401-8acb-4427-ae1f-4356199867f0","invoice_number":"SMS-1116-030-GBO1","status_code":429,"duration_ms":0}
+api-1  | {"time":"2026-11-13T17:38:38.065714336Z","level":"INFO","msg":"asp response","invoice_id":"7fe4b894-7332-4e39-be58-1bc82f9741c3","invoice_number":"SMS-1116-031-GBO1","status_code":429,"duration_ms":0}
+api-1  | {"time":"2026-11-13T17:38:38.066794735Z","level":"INFO","msg":"asp response","invoice_id":"d0920da0-68e9-4108-bce4-cb09c8bb6bbe","invoice_number":"SMS-1116-032-GBO1","status_code":429,"duration_ms":0}
+api-1  | {"time":"2026-11-13T17:38:38.066884777Z","level":"INFO","msg":"asp response","invoice_id":"f09c4cae-4178-48a8-a3b8-1315a7909f50","invoice_number":"SMS-1116-033-GBO1","status_code":429,"duration_ms":0}
+api-1  | {"time":"2026-11-13T17:38:38.067855678Z","level":"INFO","msg":"asp response","invoice_id":"8e010355-f430-410c-8c7c-311e531943d5","invoice_number":"SMS-1116-034-GBO1","status_code":429,"duration_ms":0}
+api-1  | {"time":"2026-11-13T17:38:38.06874191Z","level":"INFO","msg":"asp response","invoice_id":"9edaf5c6-5b6f-41c7-a750-976f12220552","invoice_number":"SMS-1116-035-GBO1","status_code":429,"duration_ms":0}
+api-1  | {"time":"2026-11-13T17:38:38.069877905Z","level":"INFO","msg":"asp response","invoice_id":"6ba53ac4-7c3f-4681-a134-86f623e652e0","invoice_number":"SMS-1116-037-GBO1","status_code":429,"duration_ms":0}
+api-1  | {"time":"2026-11-13T17:38:38.070271038Z","level":"INFO","msg":"asp response","invoice_id":"752c1d51-46f4-4b23-8420-31bc8f4e6a4a","invoice_number":"SMS-1116-036-GBO1","status_code":429,"duration_ms":0}
+api-1  | {"time":"2026-11-13T17:38:38.070932986Z","level":"INFO","msg":"asp response","invoice_id":"7edf61b5-41af-4b0b-80de-8898dd8f1381","invoice_number":"SMS-1116-038-GBO1","status_code":429,"duration_ms":0}
+api-1  | {"time":"2026-11-13T17:38:38.07177923Z","level":"INFO","msg":"asp response","invoice_id":"8c9c0faf-3f32-4d3b-8d69-89c1ecf7ec77","invoice_number":"SMS-1116-039-GBO1","status_code":429,"duration_ms":0}
+api-1  | {"time":"2026-11-13T17:38:38.07279414Z","level":"INFO","msg":"asp response","invoice_id":"b845c978-e091-4257-9c6a-faad2f39af7c","invoice_number":"SMS-1116-040-GBO1","status_code":429,"duration_ms":0}
+api-1  | {"time":"2026-11-13T17:46:56.842983171Z","level":"INFO","msg":"http request","method":"GET","path":"/v1/imports/4075ceea-e74e-4e85-82c9-c1c12f5a2ff3/rows","route":"/v1/imports/{id}/rows","status":200,"duration_ms":73}
+api-1  | {"time":"2026-11-13T17:55:13.429425057Z","level":"INFO","msg":"http request","method":"GET","path":"/v1/sellers","route":"/v1/sellers","status":200,"duration_ms":0}
+api-1  | {"time":"2026-11-13T18:00:34.774296716Z","level":"INFO","msg":"http request","method":"GET","path":"/v1/imports/4075ceea-e74e-4e85-82c9-c1c12f5a2ff3","route":"/v1/imports/{id}","status":200,"duration_ms":1}
+api-1  | {"time":"2026-11-13T18:02:35.649642923Z","level":"INFO","msg":"http request","method":"GET","path":"/v1/sellers","route":"/v1/sellers","status":200,"duration_ms":0}
+api-1  | {"time":"2026-11-14T03:19:21.020142955Z","level":"INFO","msg":"http request","method":"GET","path":"/v1/sellers","route":"/v1/sellers","status":200,"duration_ms":0}
+
+--- Corrected ASP reference and response check ---
+Query:
+SELECT invoice_number, status,
+CASE WHEN COALESCE(asp_message_id,'')='' THEN 'EMPTY' ELSE asp_message_id END AS asp_reference,
+CASE WHEN asp_response IS NULL THEN 'NO RESPONSE' ELSE 'HAS RESPONSE' END AS response_status
+FROM invoices
+WHERE import_id='9d10b954-c31c-4f7b-a980-259372d7f45e'
+AND status='Submitted'
+ORDER BY invoice_number;
+
+Result:
+32 invoices (SMS-1116-009-GBO1 through SMS-1116-040-GBO1)
+Status: Submitted
+ASP reference: EMPTY
+ASP response: NO RESPONSE
+
+Interpretation:
+The 32 records have no stored ASP message reference or response. API logs show HTTP 429 for these invoice submissions. This supports an ASP rate-limit / submission interruption hypothesis, but ASP-side receipt must be reconciled before retrying.
