@@ -1,9 +1,9 @@
 # Product Support Engineer — Assignment Submission
 
 - **Name:** Sanjay M
-- **Date submitted:** [Enter actual submission date]
+- **Date submitted:** 14 November 2026
 - **Repository link:** https://github.com/sanjay-complyance/pse-support-lab
-- **Total time spent (real time):** [Calculate from actual time log]
+- **Total time spent (real time):** 6 hours
 
 > All customer replies and acknowledgements below are drafts only. No real customer emails were sent. The exercise clock is Monday, 16 November 2026, Asia/Dubai. Real working time is recorded separately.
 
@@ -524,14 +524,13 @@ Next, I would study:
 
 | Date | From–to | What I worked on |
 |---|---|---|
-| [Actual date] | [Actual start–end] | Environment setup, Docker and service startup |
-| [Actual date] | [Actual start–end] | Loaded lab data and inspected incidents |
-| [Actual date] | [Actual start–end] | Database investigation: Oasis, Al Noor, Sahara and Ghaf |
-| [Actual date] | [Actual start–end] | Marina Bay alert and local observability checks |
-| [Actual date] | [Actual start–end] | Source-code investigation and report preparation |
-| [Actual date] | [Actual start–end] | Evidence collection, final review and GitHub submission |
+| [13 Nov 2026] | [9:00P.M - 9:30P.M] | Environment setup, Docker and service startup |
+| [13 Nov 2026] | [9:30P.M - 10:00P.M] | Loaded lab data and inspected incidents |
+| [13 Nov 2026] | [10:00P.M - 11:30P.M] | Database investigation: Oasis, Al Noor, Sahara and Ghaf |
+| [14 Nov 2026] | [8:30A.M - 9:30A.M] | Marina Bay alert and local observability checks |
+| [14 Nov 2026] | [9:30A.M - 10:30A.M] | Source-code investigation and report preparation |
+| 14 Nov 2026] | [10:30A.M - 11:30A.M] | Evidence collection, final review and GitHub submission |
 
-Replace these entries with your actual working times. Do not count simulated exercise timestamps as real working hours.
 
 ### AI usage disclosure
 
